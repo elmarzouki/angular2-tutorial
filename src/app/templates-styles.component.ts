@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
     <h1>
       {{message}}
     </h1>
+    <ng-content></ng-content>
   `,
   styles: []
 })
