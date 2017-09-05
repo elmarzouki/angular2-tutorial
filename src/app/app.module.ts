@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TemplatesStylesComponent } from './templates-styles.component';
-import { DatabindingComponent } from './databinding.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { PropertyBindingComponent } from './databinding/property-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TemplatesStylesComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule
