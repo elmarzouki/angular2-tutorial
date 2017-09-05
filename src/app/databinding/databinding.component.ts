@@ -19,7 +19,7 @@ export class DatabindingComponent implements OnInit {
     return true;
   }
 
-  onClicked(value:string){
+  onButtonClicked(value:string){
     alert(value);
   }
 }
