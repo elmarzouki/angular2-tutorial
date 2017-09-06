@@ -6,6 +6,10 @@ import { TemplatesStylesComponent } from './templates-styles.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertyBindingComponent } from './databinding/property-binding.component';
 import { EventBindingComponent } from './databinding/event-binding.component';
+import { TwoWayBindingComponent } from './databinding/two-way-binding.component';
+
+
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,10 +17,12 @@ import { EventBindingComponent } from './databinding/event-binding.component';
     TemplatesStylesComponent,
     DatabindingComponent,
     PropertyBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwoWayBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
