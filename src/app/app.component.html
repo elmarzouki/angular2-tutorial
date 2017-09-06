@@ -6,3 +6,7 @@
 </app-templates-styles>
 <hr>
 <app-databinding></app-databinding>
+<hr>
+<app-lifecycle *ngIf="!destroy"></app-lifecycle>
+<button (click)="destroy = true">Destroy</button>
+<hr>

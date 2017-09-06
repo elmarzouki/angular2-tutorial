@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   redMessage = 'This message is red colored!';
+  destroy: boolean = false;
 }

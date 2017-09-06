@@ -10,6 +10,7 @@ import { TwoWayBindingComponent } from './databinding/two-way-binding.component'
 
 
 import { FormsModule }   from '@angular/forms';
+import { LifecycleComponent } from './lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule }   from '@angular/forms';
     DatabindingComponent,
     PropertyBindingComponent,
     EventBindingComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,
