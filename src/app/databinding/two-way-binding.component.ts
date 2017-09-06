@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwoWayBindingComponent implements OnInit {
 
-  user = { name: 'name', password: 'password'};
+  user = { name: 'iSuperMostafa', password: 'password'};
 
   constructor() { }
 
