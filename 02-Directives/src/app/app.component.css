@@ -1,0 +1,13 @@
+div {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+
+.border {
+	border: 2px solid red;
+}
+
+.background {
+	background-color: yellow;
+}
