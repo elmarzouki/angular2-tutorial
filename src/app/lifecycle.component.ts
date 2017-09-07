@@ -18,11 +18,11 @@ export class LifecycleComponent implements OnInit, OnChanges, DoCheck, AfterCont
   AfterViewInit, AfterViewChecked, OnDestroy {
 
     @Input() bindable = "I'm bindable outside this component!";
-    
-    // to be accessed inside the class
+
+    // Access LocalReferencViewChild inside the class
     @ViewChild('LocalReferencViewChild') LocalReferencViewChild: HTMLElement;
 
-    // access LocalReferencContentChild inside this class
+    // Access LocalReferencContentChild inside this class
     @ContentChild('LocalReferencContentChild') LocalReferencContentChild: HTMLElement; 
 
     constructor() { }
