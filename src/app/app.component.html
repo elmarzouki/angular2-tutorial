@@ -7,6 +7,10 @@
 <hr>
 <app-databinding></app-databinding>
 <hr>
-<app-lifecycle *ngIf="!destroy"></app-lifecycle>
+<app-lifecycle *ngIf="!destroy" [bindable]="bind">
+	<p>{{message}}</p>
+</app-lifecycle>
 <button (click)="destroy = true">Destroy</button>
+<button (click)="message = 'Content changed!'">Change Conetent</button>
+<button (click)="bind = 'bindable from lifecycle component has been changed!'">Change Binding</button>
 <hr>

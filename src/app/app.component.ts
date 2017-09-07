@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  redMessage = 'This message is red colored!';
+  redMessage: string = 'This message is red colored!';
   destroy: boolean = false;
+  message: string = 'thisIsString';
+  bind: string = 'bindable from lifecycle component can be changed here!';
 }
