@@ -8,9 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
 	
 	private flag: Boolean = true;
-	
+	private numbers: Array<number> = [1, 2, 3, 4, 5];
+
 	onSwitch() {
 		this.flag = !this.flag;
 	}
-	
+
 }

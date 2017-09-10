@@ -17,3 +17,8 @@
 <h2>*ngIf</h2>
 <div *ngIf="flag">Conditional Text</div>
 <button (click)="onSwitch()">Switch</button>
+<hr>
+<h2>*ngFor</h2>
+<ul>
+  <li *ngFor="let number of numbers; let i = index">current number: {{number}} at index: {{i}}</li>
+</ul>
