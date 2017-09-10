@@ -1,14 +1,19 @@
 <h1>Attribute Directives</h1>
 <h2> ngClass and ngStyle</h2>
 <!-- using ngClass directive -->
-<div [ngClass]="{border: true, background: true}"></div>
+<div [ngClass]="{border: true, background: true, pixel: true}"></div>
 <!-- using property binding -->
-<div [class.border]="true"></div>
+<div [class.border]="true" [class.background]="true" [class.pixel]="true"></div>
 <!-- using ngStyle directive -->
-<div [ngStyle]="{'border': '2px solid red', 'background-color': 'yellow'}"></div>
+<div [ngStyle]="{'border': '2px solid red', 'background-color': 'yellow', 'width': '100px', 'height': '100px', 'display': 'inline-block'}"></div>
 <hr>
 <h1>Custom Attribute Directive</h1>
-<div dirHighlight></div>
+<div dirHighlight [class.pixel]="true"></div>
 <hr>
 <h1>Element Interaction with HostListener and HostBinding</h1>
-<div dirHover [defaultColor]="'#52be80'" [highlightColor]= "'#07ea68'"></div>
+<div dirHover [defaultColor]="'#52be80'" [highlightColor]= "'#07ea68'" [class.pixel]="true"></div>
+<hr>
+<h1>Stractural Directives</h1>
+<h2>*ngIf</h2>
+<div *ngIf="flag">Conditional Text</div>
+<button (click)="onSwitch()">Switch</button>

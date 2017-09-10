@@ -24,3 +24,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Building a Custom Attribute Directive.
 	+ Element Interaction with HostListener and HostBinding.
 	+ HostListener Passing Data.
+	+ Directive Property Binding.
+	
