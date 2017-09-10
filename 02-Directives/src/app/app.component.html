@@ -15,7 +15,7 @@
 <hr>
 <h1>Stractural Directives</h1>
 <h2>*ngIf</h2>
-<div *ngIf="flag">Conditional Text</div>
+<div *ngIf="flag">I'm visible</div>
 <button (click)="onSwitch()">Switch</button>
 <hr>
 <h2>*ngFor</h2>
@@ -29,3 +29,6 @@
     <p *ngSwitchCase="100">The value is 100</p>
     <p *ngSwitchDefault>The value is by default 1000</p>
 <div>
+<hr>
+<h2>Building a Custom Structural Directive - *unless</h2>
+<div *unless="flag">I'm visible</div>

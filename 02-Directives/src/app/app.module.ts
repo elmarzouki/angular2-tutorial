@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './Highlight/highlight.directive';
 import { HoverDirective } from './Highlight/hover.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HighlightDirective,
-    HoverDirective
+    HoverDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule
