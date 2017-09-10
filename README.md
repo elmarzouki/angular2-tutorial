@@ -2,6 +2,10 @@
 
 > Angular2 tutorial from A-Z.
 
+## How it works?!
+Go to your lessons directory using `cd dirName`
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+
 ## Tutorial workflow
 
 ### 01-Components-Templates-Databinding
@@ -17,3 +21,5 @@
 	+ Template Access with Local References ViewChild and ContentChild.
 ### 02- Directives
 	+ Attribute Directives.
+	+ Building a Custom Attribute Directive.
+	+ Element Interaction with HostListener and HostBinding.
