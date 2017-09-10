@@ -22,3 +22,10 @@
 <ul>
   <li *ngFor="let number of numbers; let i = index">current number: {{number}} at index: {{i}}</li>
 </ul>
+<hr>
+<h2>ngSwitch</h2>
+<div [ngSwitch]="value">
+    <p *ngSwitchCase="10">The value is 10</p>
+    <p *ngSwitchCase="100">The value is 100</p>
+    <p *ngSwitchDefault>The value is by default 1000</p>
+<div>
