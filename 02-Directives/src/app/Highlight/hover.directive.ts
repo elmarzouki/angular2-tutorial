@@ -23,4 +23,9 @@ export class HoverDirective {
 		return this.backgroundColor;
 	}
 
+	@HostListener('click', ['$event'])
+	onClick(event) {
+		console.log("Event Target" + event.target);
+	}
+
 }
