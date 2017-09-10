@@ -1,26 +1,30 @@
-import { Directive, HostListener, HostBinding } from '@angular/core';
+import { Directive, HostListener, HostBinding, Input, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[dirHover]'
 })
 export class HoverDirective {
 
-	private green: string = '#52be80';
-	private lightGreen: string = '#07ea68';
-	private backgroundColor: string = this.green;
+	@Input() defaultColor: string = '#52be80';
+	@Input() highlightColor: string = '#07ea68';
+	private backgroundColor: string = null;
 
   	constructor() { }
 
 	@HostListener('mouseenter') mouseenter() {
-		this.backgroundColor = this.lightGreen;
+		this.backgroundColor = this.highlightColor;
 	}
 
 	@HostListener('mouseleave') mouseleave() {
-		this.backgroundColor = this.green;
+		this.backgroundColor = this.defaultColor;
 	}
 
 	@HostBinding('style.backgroundColor') get setBackgroundColor() {
 		return this.backgroundColor;
+	}
+
+	ngOnInit(){
+		this.backgroundColor = this.defaultColor;
 	}
 
 	@HostListener('click', ['$event'])
