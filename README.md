@@ -31,3 +31,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Building a Custom Structural Directive - unless.
 ### 03-	Services
 	+  Example Logging Servic.
+	+ Example Injecting the Logging Service.
