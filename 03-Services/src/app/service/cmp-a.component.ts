@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import  { LogService } from '../log.service';
+
+
 @Component({
     selector: 'si-cmp-a',
     template: `
@@ -19,14 +22,17 @@ import { Component } from '@angular/core';
         <h3>Received Value</h3>
         <p>{{value}}</p>
     </div>
-  `
+  `,
+  providers: [LogService]
 })
 export class CmpAComponent {
     value = '';
     items: string[] = [];
 
+    constructor (private logSerivce: LogService) {}
+
     onLog(value: string) {
-  
+        this.logSerivce.writeToLog(value);
     }
 
     onStore(value: string) {
@@ -40,4 +46,5 @@ export class CmpAComponent {
     onSend(value: string) {
    
     }
+    
 }
