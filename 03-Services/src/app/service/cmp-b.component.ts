@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import  { LogService } from '../log.service';
+import  { LogService } from './log.service';
+import  { DataService } from './data.service';
 
 @Component({
     selector: 'si-cmp-b',
@@ -27,16 +28,18 @@ export class CmpBComponent implements OnInit {
     value = '';
     items: string[] = [];
 
-    constructor (private logSerivce: LogService) {}
+    constructor (private logSerivce: LogService, private dataService: DataService) {}
 
     onLog(value: string) {
         this.logSerivce.writeToLog(value);
     }
 
     onStore(value: string) {
+        this.dataService.setData(value);
     }
 
     onGet() {
+        this.items = this.dataService.getData();
     }
 
     ngOnInit() {
