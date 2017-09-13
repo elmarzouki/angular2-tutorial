@@ -11,7 +11,7 @@ import { Subscription } from "rxjs/Rx";
       <a [routerLink]="['/user']">User</a>
       <a [routerLink]="['../']">Back to Home</a>
       <!-- navigate from code -->
-      <button (click)="onNavigate()">Go Home</button>
+      <button (click)="onNavigate()">Go Home with query prams</button>
       <hr>
       <p> user id: {{id}}</p>
     `
@@ -28,7 +28,7 @@ export class UserComponent implements OnDestroy{
 	}
 
 	onNavigate() {
-		this.router.navigate(['/']);
+		this.router.navigate(['/'], {queryParams: {'analytics': '100'}});
 	}
 
 	ngOnDestroy(){
