@@ -37,4 +37,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 ### 04-	Routing
 	+ Loading and Displaying Route Components.
 	+ Navigation with Links.
-	
+	+ Imperative Routing Triggered in Code.
+	+ Route Parameters.

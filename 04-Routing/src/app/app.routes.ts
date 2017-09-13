@@ -10,7 +10,8 @@ import { HomeComponent } from './home.component';
 
 const appRoutes: Routes = [
   { path: 'user', component: UserComponent},
-  { path: '', component: HomeComponent}
+  { path: '', component: HomeComponent},
+  { path: 'user/:id', component: UserComponent}
 ]
 
 export const routing = RouterModule.forRoot(appRoutes);
