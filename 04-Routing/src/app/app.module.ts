@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { appRoutes } from './app.routes';
+import { routing } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
@@ -21,10 +21,7 @@ import { HomeComponent } from './home.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
+    routing 
   ],
   providers: [],
   bootstrap: [AppComponent]

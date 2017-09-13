@@ -8,7 +8,9 @@ import { UserDetailComponent } from './user/user-detail.component';
 import { HomeComponent } from './home.component';
 
 
-export const appRoutes: Routes = [
+const appRoutes: Routes = [
   { path: 'user', component: UserComponent},
   { path: '', component: HomeComponent}
 ]
+
+export const routing = RouterModule.forRoot(appRoutes);

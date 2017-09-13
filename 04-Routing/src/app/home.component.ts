@@ -8,8 +8,6 @@ import { Subscription } from "rxjs/Rx";
     <h1>
       Home Component!
     </h1>
-    <hr>
-    
   `,
   styles: []
 })

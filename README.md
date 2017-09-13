@@ -35,4 +35,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Multiple Instances vs One Instance.
 	+ Using Services for Cross-Component Interaction.
 ### 04-	Routing
-	+ 
+	+ Loading and Displaying Route Components.
+	
