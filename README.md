@@ -39,3 +39,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Navigation with Links.
 	+ Imperative Routing Triggered in Code.
 	+ Route Parameters.
+	+ Query Parameters.
+	+ Extracting Query Parameters.

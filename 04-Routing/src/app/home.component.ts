@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { Router } from "@angular/router";
+import { ActivatedRoute } from "@angular/router";
 import { Subscription } from "rxjs/Rx";
 
 @Component({
@@ -8,22 +8,22 @@ import { Subscription } from "rxjs/Rx";
     <h1>
       Home Component!
     </h1>
+    <p>param: {{param}}<p>
   `,
   styles: []
 })
-// {{param}}
 export class HomeComponent implements OnDestroy {
-  // private subscription: Subscription;
+  private subscription: Subscription;
 
-  // param: string;
+  param: string;
 
-  // constructor(private router: Router) {
-  //   this.subscription = router.routerState.queryParams.subscribe(
-  //     (queryParam: any) => this.param = queryParam['analytics']
-  //   );
-  // }
+  constructor(private route: ActivatedRoute) {
+    this.subscription = route.queryParams.subscribe(
+      (queryParam: any) => this.param = queryParam['analytics']
+    );
+  }
 
   ngOnDestroy() {
-    // this.subscription.unsubscribe();
+    this.subscription.unsubscribe();
   }
 }
