@@ -36,4 +36,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Using Services for Cross-Component Interaction.
 ### 04-	Routing
 	+ Loading and Displaying Route Components.
+	+ Navigation with Links.
 	
