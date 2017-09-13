@@ -30,5 +30,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ ngSwitch.
 	+ Building a Custom Structural Directive - unless.
 ### 03-	Services
-	+  Example Logging Servic.
+	+ Example Logging Servic.
 	+ Example Injecting the Logging Service.
+	+ Multiple Instances vs One Instance.
+	+ Using Services for Cross-Component Interaction.
+### 04-	Routing
+	+ 
