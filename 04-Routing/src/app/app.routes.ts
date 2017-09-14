@@ -8,10 +8,17 @@ import { UserDetailComponent } from './user/user-detail.component';
 import { HomeComponent } from './home.component';
 
 
+const userRoutes: Routes = [
+	{ path: 'detail', component: UserDetailComponent },
+	{ path: 'edit', component: UserEditComponent }
+]
+
 const appRoutes: Routes = [
   { path: 'user', component: UserComponent},
   { path: '', component: HomeComponent},
-  { path: 'user/:id', component: UserComponent}
+  { path: 'user/:id', component: UserComponent},
+  { path: 'user/:id', component: UserComponent, children: userRoutes}
 ]
 
 export const routing = RouterModule.forRoot(appRoutes);
+
