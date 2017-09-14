@@ -45,3 +45,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Child Routes.
 	+ Redirecting Request.
 	+ Styling Active Route Links.
+	+ Guards: CanActivate.

@@ -6,10 +6,10 @@ import { UserComponent } from './user/user.component';
 import { UserEditComponent } from './user/user-edit.component';
 import { UserDetailComponent } from './user/user-detail.component';
 import { HomeComponent } from './home.component';
-
+import { UserDetailGuard } from './user/user-detail.guard'
 
 const userRoutes: Routes = [
-	{ path: 'detail', component: UserDetailComponent },
+	{ path: 'detail', component: UserDetailComponent, canActivate: [UserDetailGuard] },
 	{ path: 'edit', component: UserEditComponent }
 ]
 
