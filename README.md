@@ -44,3 +44,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Query Parameters and the routerLink Directive.
 	+ Child Routes.
 	+ Redirecting Request.
+	+ Styling Active Route Links.

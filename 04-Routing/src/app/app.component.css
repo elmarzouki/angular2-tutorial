@@ -1,0 +1,15 @@
+.nav-li {
+	display: inline-block;
+	padding: 5px 5px 5px 5px;
+	max-width: 500px;
+}
+.nav-li > a {
+	text-decoration: none;
+	color: #ff1c9b;
+}
+.active {
+	background-color: #fffc1c;
+}
+.nav {
+	padding: 5px 5px 5px 5px;
+}

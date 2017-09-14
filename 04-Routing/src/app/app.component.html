@@ -1,9 +1,17 @@
 <h1>Hello World!</h1>
 <hr>
-<!-- using routerLink to navigate without reloading the page -->
-<a [routerLink]="['']" [queryParams]="{analytics: 500}">Home</a> |
-<a [routerLink]="['user']">User</a> |
-<input type="text" #id (input)="0"> <!-- (input)="0" => force angular 2 to rerun change detection -->
-<a [routerLink]="['user', id.value]">User/:id</a>
+<div [ngClass]="{'nav': 'true'}" >
+	<div [ngClass]="{'nav-li': 'true'}" routerLinkActive="active">
+		<!-- using routerLink to navigate without reloading the page -->
+		<a [routerLink]="['']" [queryParams]="{analytics: 500}">Home</a>
+	</div>
+	<div [ngClass]="{'nav-li': 'true'}" routerLinkActive="active">
+		<a [routerLink]="['user']">User</a>
+		<!-- (input)="0" => force angular 2 to rerun change detection -->
+		<input type="text" #id (input)="0">
+		<a [routerLink]="['user', id.value]">User/:id</a>
+	</div>
+</div>
+
 <hr>
 <router-outlet></router-outlet>
