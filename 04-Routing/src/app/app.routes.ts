@@ -7,10 +7,11 @@ import { UserEditComponent } from './user/user-edit.component';
 import { UserDetailComponent } from './user/user-detail.component';
 import { HomeComponent } from './home.component';
 import { UserDetailGuard } from './user/user-detail.guard'
+import { UserEditGuard } from './user/user-edit.guard'
 
 const userRoutes: Routes = [
 	{ path: 'detail', component: UserDetailComponent, canActivate: [UserDetailGuard] },
-	{ path: 'edit', component: UserEditComponent }
+	{ path: 'edit', component: UserEditComponent, canDeactivate: [UserEditGuard] }
 ]
 
 const appRoutes: Routes = [

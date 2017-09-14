@@ -10,6 +10,7 @@ import { UserEditComponent } from './user/user-edit.component';
 import { UserDetailComponent } from './user/user-detail.component';
 import { HomeComponent } from './home.component';
 import { UserDetailGuard } from './user/user-detail.guard';
+import { UserEditGuard } from './user/user-edit.guard';
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { UserDetailGuard } from './user/user-detail.guard';
     BrowserModule,
     routing 
   ],
-  providers: [UserDetailGuard],
+  providers: [UserDetailGuard, UserEditGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
