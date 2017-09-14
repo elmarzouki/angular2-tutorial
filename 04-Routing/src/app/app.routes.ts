@@ -14,10 +14,13 @@ const userRoutes: Routes = [
 ]
 
 const appRoutes: Routes = [
-  { path: 'user', component: UserComponent},
+  // redirect if the full path is user to /user/0 if
+  { path: 'user', redirectTo: '/user/0', pathMatch: 'full' },
   { path: '', component: HomeComponent},
   { path: 'user/:id', component: UserComponent},
-  { path: 'user/:id', component: UserComponent, children: userRoutes}
+  { path: 'user/:id', component: UserComponent, children: userRoutes},
+  // redirect any unkown paths to /user/0
+  { path: '**', redirectTo: '/user/0', pathMatch: 'full' }
 ]
 
 export const routing = RouterModule.forRoot(appRoutes);
