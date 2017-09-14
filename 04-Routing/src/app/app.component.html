@@ -1,7 +1,7 @@
 <h1>Hello World!</h1>
 <hr>
 <!-- using routerLink to navigate without reloading the page -->
-<a [routerLink]="['']">Home</a> |
+<a [routerLink]="['']" [queryParams]="{analytics: 500}">Home</a> |
 <a [routerLink]="['user']">User</a> |
 <input type="text" #id (input)="0"> <!-- (input)="0" => force angular 2 to rerun change detection -->
 <a [routerLink]="['user', id.value]">User/:id</a>
