@@ -49,4 +49,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Guards CanDeactivate.
 ### 05- Forms
 	+ Template-Driven Approach:
-		- 
+		- Registering Controls Template-Driven.
