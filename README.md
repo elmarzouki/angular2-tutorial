@@ -49,8 +49,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Guards CanDeactivate.
 ### 05- Forms
 	+ Template-Driven Approach:
-		- Registering Controls Template-Driven.
-		- Submitting a Form and Using the Output Template-Driven.
-		- Input Validation Template-Driven.
-		- Form State CSS Classes Template-Driven.
-		- Two-Way Binding with ngModel Template-Driven.
+		- Registering Controls.
+		- Submitting a Form and Using the Output.
+		- Input Validation.
+		- Form State CSS Classes.
+		- Two-Way Binding with ngModel.
+		- Form Groups.
