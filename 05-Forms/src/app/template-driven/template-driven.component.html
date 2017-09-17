@@ -31,8 +31,10 @@
            name="password"
            required>
   </div>
-  <div class="radio">
+  <div class="radio" *ngFor="let gender of genders">
     <label>
+      <input type="radio" name="gender" [(ngModel)]="user.gender" [value]="gender">
+      {{ gender }}
     </label>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
