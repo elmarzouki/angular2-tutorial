@@ -10,11 +10,14 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 export class DataDrivenComponent {
     dataDrivenForm = new FormGroup({
-		'username': new FormControl('iSuperMostafa', Validators.required),
+    	'userData': new FormGroup({
+    				'username': new FormControl('iSuperMostafa', Validators.required),
 		'email': new FormControl('', [
 			//angular2 built-in Validators: https://angular.io/api/forms/Validators
 			Validators.required,
 			Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")]),
+		
+	}),
 		'password': new FormControl('', Validators.required)
 	});
 
