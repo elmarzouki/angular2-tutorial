@@ -1,19 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // Template-Driven Approach 
-import { FormsModule } from '@angular/forms';
+// import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TemplateDrivenComponent } from './template-driven/template-driven.component';
-
+// import { TemplateDrivenComponent } from './template-driven/template-driven.component';
+import { DataDrivenComponent } from './data-driven/data-driven.component';
+import { ReactiveFormsModule } from '@angular/forms'; // Data-Driven Approach
 @NgModule({
   declarations: [
     AppComponent,
-    TemplateDrivenComponent
+    // TemplateDrivenComponent
+    DataDrivenComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule // Template-Driven Approach 
+    // FormsModule // Template-Driven Approach
+    ReactiveFormsModule // Data-Driven Approach
   ],
   providers: [],
   bootstrap: [AppComponent]
