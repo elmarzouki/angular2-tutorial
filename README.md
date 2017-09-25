@@ -56,3 +56,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 		- Two-Way Binding with ngModel.
 		- Form Groups.
 		- Radio Button Controls.
+		- Form State.
+	+ Data-Driven Approach:
+		- Creating a Form Data-Driven.
+		- Synchronizing HTML and the Angular 2 Form Data-Driven.
+		- Submitting a Form and Using the Output Data-Driven.
+		- Input Validation.
+		- Form State.
+		- Form Groups.
