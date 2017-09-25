@@ -9,6 +9,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 
 export class DataDrivenComponent {
+	genders = ['male', 'female'];
     dataDrivenForm = new FormGroup({
     	'userData': new FormGroup({
     				'username': new FormControl('iSuperMostafa', Validators.required),
@@ -18,7 +19,8 @@ export class DataDrivenComponent {
 			Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")]),
 		
 	}),
-		'password': new FormControl('', Validators.required)
+		'password': new FormControl('', Validators.required),
+		'gender': new FormControl('male')
 	});
 
     onSubmit() {

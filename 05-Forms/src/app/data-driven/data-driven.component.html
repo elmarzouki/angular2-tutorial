@@ -27,8 +27,10 @@
                id="password"
                formControlName="password">
     </div>
-    <div class="radio">
+    <div class="radio" *ngFor="let gender of genders">
         <label>
+          <input type="radio" formControlName="gender" [value]="gender">
+          {{gender}}
         </label>
     </div>
     <div>
