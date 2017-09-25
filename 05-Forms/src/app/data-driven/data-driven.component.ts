@@ -5,15 +5,11 @@ import { FormGroup, FormControl } from '@angular/forms';
     templateUrl: 'data-driven.component.html'
 })
 export class DataDrivenComponent {
-    dataDrivenForm: FormGroup;
-
-    constrctor() {
-    	this.dataDrivenForm = new FormGroup({
-    		'username': new FormControl(),
-    		'email': new FormControl(),
-    		'password': new FormControl()
-    	});
-    }
+    dataDrivenForm = new FormGroup({
+		'username': new FormControl(),
+		'email': new FormControl(),
+		'password': new FormControl()
+	});
 
     onSubmit() {
     	console.log(this.dataDrivenForm);
