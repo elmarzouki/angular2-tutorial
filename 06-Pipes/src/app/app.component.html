@@ -1,8 +1,11 @@
 <div class="pipes">
   <h1>Pipes</h1>
   <h2>Built-in Pipes</h2>
-  <p>{{myValue}}</p>
-  <p>{{myValue | uppercase}}</p>
-  <p>{{myDate}}</p>
-  <p>{{myDate | date}}</p>
+  <p>myValue: {{myValue}}</p>
+  <p>myValue | uppercase: {{myValue | uppercase}}</p>
+  <p>myDate: {{myDate}}</p>
+  <p>myDate | date: {{myDate | date}}</p>
+  <p>myDate | date:"MM/dd/yy": {{myDate | date:"MM/dd/yy"}}</p>
+  <p>myValue | slice:5: {{myValue | slice:5}}</p>
+  <p>myValue | slice:5:7: {{myValue | slice:3:7}}</p>
 </div>
