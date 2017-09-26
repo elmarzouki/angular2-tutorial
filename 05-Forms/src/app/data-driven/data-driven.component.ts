@@ -92,4 +92,14 @@ export class DataDrivenComponent {
     	);
     	return promise;
     }
+
+    reset() {
+      // this.dataDrivenForm.reset();  // will reset to null
+      this.dataDrivenForm.reset({
+      	userData: {username: 'iSuperMostafa', email: 'iSueprMostafa@test.com'},
+      	gender: 'male',
+      	password: '123456',
+      	hobbies: ['Cooking']
+      });   // will reset to value specified
+   }
 }
