@@ -30,6 +30,14 @@ export class DataDrivenComponent {
 				['Cooking', Validators.required, this.asyncExampleValidator]
 			])
 		});
+
+		this.dataDrivenForm.valueChanges.subscribe (
+			(data: any) => console.log(data)
+		);
+
+		this.dataDrivenForm.statusChanges.subscribe (
+			(data: any) => console.log(data)
+		);
 	}
 
 	// without using form builder
