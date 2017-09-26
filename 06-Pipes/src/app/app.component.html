@@ -9,4 +9,10 @@
   <p>myValue | slice:5: {{myValue | slice:5}}</p>
   <p>myValue | slice:3:7: {{myValue | slice:3:7}}</p>
   <p>myValue | slice:3:7 | uppercase: {{myValue | slice:3:7 | uppercase}}</p>
+  <hr>
+  <h2>Custom Pipe</h2>
+  <!-- (keyup)="0" is a dummy event to update the UI -->
+  <input type="text" name="" #input (keyup)="0">
+  <p>input.value: {{input.value}}</p>
+  <p>input.value | double: {{input.value | double}}</p>
 </div>
