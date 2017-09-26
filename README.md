@@ -72,3 +72,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 		- Listening to Status Value Changes.
 		- Resetting Forms.
 ### 06- Pipes
+	+ Using Pipes.
