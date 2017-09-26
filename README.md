@@ -71,3 +71,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 		- Custom Asynchronous Validators.
 		- Listening to Status Value Changes.
 		- Resetting Forms.
+### 06- Pipes
