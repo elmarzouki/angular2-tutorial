@@ -17,7 +17,7 @@ export class DataDrivenComponent {
 	constructor(private formBuilder: FormBuilder){
 		this.dataDrivenForm = formBuilder.group({
 			'userData': formBuilder.group({
-    			'username': ['iSuperMostafa', Validators.required],
+    			'username': ['iSuperMostafa', [Validators.required, this.exampleValidator]],
 				'email': ['', [
 					//angular2 built-in Validators: https://angular.io/api/forms/Validators
 					Validators.required,
@@ -57,5 +57,13 @@ export class DataDrivenComponent {
 
     onSubmit() {
     	console.log(this.dataDrivenForm);
+    }
+
+
+    exampleValidator(control: FormControl): {[s: string]: boolean} {
+    	if(control.value === 'Example') {
+    		return {example: true};
+    	}
+    	return null;
     }
 }
