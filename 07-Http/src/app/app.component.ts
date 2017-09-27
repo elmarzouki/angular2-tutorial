@@ -26,7 +26,8 @@ export class AppComponent implements OnInit {
 	onSubmit(username: string, email:String) {
 		this.httpService.sendData({username: username, email:email})
 		.subscribe(
-			data => this.dataResponseAfterPost = data
+			data => this.dataResponseAfterPost = data,	
+			error => console.log(error)
 		);
   	}
   	onGetData() {
