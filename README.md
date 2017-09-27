@@ -86,3 +86,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Retrieving and Transforming Data with Observables.
 	+ Using the Async Pipe.
 	+ Error Handling with Observables.
+### 08- Authentication
