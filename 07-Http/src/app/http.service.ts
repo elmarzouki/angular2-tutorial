@@ -21,4 +21,9 @@ export class HttpService {
   	})
   	.map((data: any) => data.json());
   }
+
+  getOwnData() {
+  	return this.http.get('https://angular2-tutorial-b2505.firebaseio.com/data.json')
+  	.map((response: any) => response.json());
+  }
 }
