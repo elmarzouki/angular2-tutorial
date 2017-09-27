@@ -15,6 +15,9 @@
   <input type="text" name="" #input (keyup)="0">
   <p>input.value: {{input.value}}</p>
   <p>input.value | double: {{input.value | double}}</p>
+  <hr>
+  <input type="text" #newItem>
+  <button class="btn btn-primary" (click)="values.push(newItem.value)">Add Item</button>
   <p>let item of values: </p>
   <ul>
     <li *ngFor="let item of values">{{item}}</li>
