@@ -78,3 +78,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Custom Pipes.
 	+ Example Creating a Filter Pipe.
 	+ Impure Pipes.
+	+ The Async Pipe.
