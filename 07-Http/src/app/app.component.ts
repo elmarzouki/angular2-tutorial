@@ -9,11 +9,13 @@ import { HttpService } from './http.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(private httpService: HttpService) {}
+	dataResponse:string;
 
-  ngOnInit() {
-  	this.httpService.getData().subscribe(
-  		(data: Response) => console.log(data)
-  	);
-  }
+	constructor(private httpService: HttpService) {}
+
+	ngOnInit() {
+	  	this.httpService.getData().subscribe(
+	  		(data: any) => this.dataResponse = data
+	  	);
+	}
 }
