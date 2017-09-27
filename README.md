@@ -80,3 +80,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Impure Pipes.
 	+ The Async Pipe.
 ### 07- Http
+	+ Sending a GET Request.
