@@ -1,1 +1,8 @@
 <p>Data Response: {{dataResponse}}</p>
+<hr>
+<label for="username">Username: </label>
+<input type="text" id="username" #username>
+<label for="email">Email: </label>
+<input type="text" id="email" #email>
+<button (click)="onSubmit(username.value, email.value)">Submit</button>
+<p>Data Response After Post: look at the console!</p>

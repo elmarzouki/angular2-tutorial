@@ -10,6 +10,7 @@ import { HttpService } from './http.service';
 })
 export class AppComponent implements OnInit {
 	dataResponse:string;
+	// dataResponseAfterPost: string;
 
 	constructor(private httpService: HttpService) {}
 
@@ -18,4 +19,11 @@ export class AppComponent implements OnInit {
 	  		(data: any) => this.dataResponse = data
 	  	);
 	}
+
+	onSubmit(username: string, email:String) {
+		this.httpService.sendData({username: username, email:email})
+		.subscribe(
+			data => console.log(data)
+		);
+  	}
 }
