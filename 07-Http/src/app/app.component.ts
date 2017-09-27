@@ -12,6 +12,8 @@ export class AppComponent implements OnInit {
 	dataResponse:string;
 	dataResponseAfterPost: string;
 	items: any[] = [];
+	asyncString = this.httpService.getData(); // we don't need to subscribe here
+												// because we are using async
 
 	constructor(private httpService: HttpService) {}
 
