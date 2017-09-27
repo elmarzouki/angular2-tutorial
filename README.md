@@ -76,3 +76,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Parametrizing Pipes.
 	+ Chaining Pipes.
 	+ Custom Pipes.
+	+ Example Creating a Filter Pipe.
+	+ Impure Pipes.

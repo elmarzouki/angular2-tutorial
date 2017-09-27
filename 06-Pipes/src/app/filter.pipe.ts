@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'filter',
-  pure: false	// impure pipe or async pipe
+  pure: false	// impure pipe
 })
 export class FilterPipe implements PipeTransform {
 
