@@ -89,3 +89,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 ### 08- Authentication
 	+ Backend Firebase Setup.
 	+ User Signup.
+	+ User Signin and Managing the User State.
