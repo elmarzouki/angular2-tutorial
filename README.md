@@ -87,3 +87,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ Using the Async Pipe.
 	+ Error Handling with Observables.
 ### 08- Authentication
+	+ Backend Firebase Setup.
+	+ User Signup.

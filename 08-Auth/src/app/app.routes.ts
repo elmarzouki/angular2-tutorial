@@ -8,7 +8,7 @@ const appRoutes = [
 	{ path: '', redirectTo: '/signup', pathMatch: 'full' },
 	{ path: 'signup', component: SignupComponent },
 	{ path: 'signin', component: SigninComponent },
-	{ path: 'protected', component: ProtectedComponent },
+	{ path: 'protected', component: ProtectedComponent }
 ]
 
 export const routing = RouterModule.forRoot(appRoutes);
