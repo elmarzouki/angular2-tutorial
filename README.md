@@ -91,3 +91,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 	+ User Signup.
 	+ User Signin and Managing the User State.
 	+ User Logout.
+	+ Protecting a Route from Unauthorized Access.
